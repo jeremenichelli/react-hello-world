@@ -1,0 +1,37 @@
+{
+  "name": "react-hello-world",
+  "version": "1.0.0",
+  "description": "Hello world sample using ReactJS",
+  "main": "dist/react-hello-world.js",
+  "scripts": {
+    "prebuild": "mkdir -p dist",
+    "build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs --screw-ie8 > dist/main.js",
+    "test": "echo 'AINT NOBODY GOT TIME FOR THAT' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremenichelli/react-hello-world.git"
+  },
+  "keywords": [
+    "react",
+    "login",
+    "form",
+    "valid"
+  ],
+  "author": "Jeremias Menichelli",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jeremenichelli/react-hello-world/issues"
+  },
+  "homepage": "https://github.com/jeremenichelli/react-hello-world#readme",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "uglify-js": "^2.6.2"
+  }
+}
