@@ -1,3 +1,3 @@
-# react-hello world
+# react-hello-world
 
-Hello world sample using ReactJS
+_It only says "Hello World" and it only weighs 346Kb!_
